@@ -7,6 +7,13 @@
   font-family: 微軟正黑體;
 }
 
+.byebye {
+  width: 0 !important;
+  height: 0 !important;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 .show {
   width: 50px !important;
   height: 50px !important;
@@ -29,12 +36,11 @@ h3 {
   max-width: 1920px;
   margin: 0 auto;
   margin-bottom: 50px;
-  padding: 65px 0 130px 0;
+  padding: 65px 150px 130px 150px;
   background-color: blanchedalmond;
 }
 
 .containerr.block-1 {
-  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -152,6 +158,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -250,6 +257,125 @@ h3 {
 
 .containerr.block-3 > .land-block > .radio_on_car:nth-child(8) {
   left: 5%;
+}
+
+.containerr.block-4 {
+  max-width: 1295px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: aquamarine;
+  margin-top: 87px;
+  padding: 0 100px 175px 100px;
+}
+
+.containerr.block-4 > .left-block {
+  width: 30%;
+  padding-right: 40px;
+}
+
+.containerr.block-4 > .left-block > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.containerr.block-4 > .left-block > span::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: white;
+  border: 8px solid #29a8df;
+  margin-right: 10px;
+}
+
+.containerr.block-4 > .left-block > a {
+  color: black;
+  text-decoration: none;
+}
+
+.containerr.block-4 > .left-block > .btn-block {
+  margin-bottom: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerr.block-4 > .left-block > .btn-block > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 110px;
+  border-radius: 15px;
+  margin-right: 15px;
+  height: 42px;
+  background-color: #e3a8a8;
+  font-size: 18px;
+}
+
+.containerr.block-4 > .left-block > .swiper {
+  width: 70%;
+}
+
+.containerr.block-4 > .testtttt {
+  width: 70%;
+}
+
+.containerr.block-4 > .testtttt > .carSwiper {
+  max-width: 880px;
+  max-height: 535px;
+  width: 100%;
+  height: 100%;
+}
+
+.containerr.block-4 > .testtttt > .carSwiper > .swiper-wrapper > .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.containerr.block-4 > .testtttt > .carSwiper > .swiper-wrapper > .swiper-slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.containerr.block-4 > iframe {
+  margin-top: 42px;
+  width: 100%;
+  height: 45vw;
 }
 
 .intro {
