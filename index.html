@@ -57,23 +57,39 @@
       <div class="containerr block-3">
         <h3>過往案例</h3>
         <div class="land-block">
-          <img src="./car-02.png" alt="">
-          <div class="radio_on_car"><input type="radio" name="btu" id="btn_1"><label for="btn_1"></label></div>
-          <div class="radio_on_car"><input type="radio" name="btu" id="btn_2"><label for="btn_2"></label></div>
-          <div class="radio_on_car"><input type="radio" name="btu" id="btn_3"><label for="btn_3"></label></div>
-          <div class="radio_on_car"><input type="radio" name="btu" id="btn_4"><label for="btn_4"></label></div>
-          <div class="radio_on_car"><input type="radio" name="btu" id="btn_5"><label for="btn_5"></label></div>
-          <div class="radio_on_car"><input type="radio" name="btu" id="btn_6"><label for="btn_6"></label></div>
-          <div class="radio_on_car"><input type="radio" name="btu" id="btn_7"><label for="btn_7"></label></div>
+          <img src="./car-02.png" alt="" />
+          <div class="radio_on_car">
+            <label for="btn_1">1</label>
+            <input type="radio" name="btu" id="btn_1" />
+          </div>
+          <div class="radio_on_car">
+            <label for="btn_2">2</label>
+            <input type="radio" name="btu" id="btn_2" />
+          </div>
+          <div class="radio_on_car">
+            <label for="btn_3">3</label>
+            <input type="radio" name="btu" id="btn_3" />
+          </div>
+          <div class="radio_on_car">
+            <label for="btn_4">4</label>
+            <input type="radio" name="btu" id="btn_4" />
+          </div>
+          <div class="radio_on_car">
+            <label for="btn_5">5</label>
+            <input type="radio" name="btu" id="btn_5" />
+          </div>
+          <div class="radio_on_car">
+            <label for="btn_6">6</label>
+            <input type="radio" name="btu" id="btn_6" />
+          </div>
+          <div class="radio_on_car">
+            <label for="btn_7">7</label>
+            <input type="radio" name="btu" id="btn_7" />
+          </div>
         </div>
       </div>
     </section>
-    
-    
-    
-    
-    
-    
+
     <!-- <section>   服務流程
       <div class="containerr block-2">
         <h3>技術流程</h3>
@@ -166,8 +182,6 @@
       </div>
     </section> -->
 
-
-    
     <script
       src="https://kit.fontawesome.com/cda6c7a130.js"
       crossorigin="anonymous"
@@ -190,6 +204,16 @@
           clickable: true,
         },
       });
+    </script>
+    <script>
+      const test = document.querySelectorAll("[name='btu']");
+      test.forEach((aaa) => aaa.addEventListener("click", testa));
+      function testa() {
+        console.log(this.previousElementSibling);
+        test.forEach((aaa) => aaa.previousElementSibling.classList.remove("show"));
+        this.previousElementSibling.classList.add('show');
+
+      }
     </script>
   </body>
 </html>

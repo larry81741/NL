@@ -7,6 +7,12 @@
   font-family: 微軟正黑體;
 }
 
+.show {
+  width: 50px !important;
+  height: 50px !important;
+  font-size: 15px !important;
+}
+
 h3 {
   font-size: 30px;
   font-weight: bold;
@@ -142,6 +148,7 @@ h3 {
 }
 
 .containerr.block-3 {
+  max-width: 1920px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,6 +172,7 @@ h3 {
   background-image: url("./logo_back-02.png");
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,6 +188,68 @@ h3 {
 .containerr.block-3 > .land-block > img {
   -webkit-transform: translateY(40%);
           transform: translateY(40%);
+  width: 100%;
+}
+
+.containerr.block-3 > .land-block > .radio_on_car {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  -webkit-transform: translateY(40%);
+          transform: translateY(40%);
+}
+
+.containerr.block-3 > .land-block > .radio_on_car > input {
+  width: 30px;
+  height: 30px;
+}
+
+.containerr.block-3 > .land-block > .radio_on_car > label {
+  width: 0px;
+  height: 0px;
+  font-size: 0;
+  background-color: blueviolet;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.containerr.block-3 > .land-block > .radio_on_car:nth-child(2) {
+  left: 25%;
+  top: 85%;
+}
+
+.containerr.block-3 > .land-block > .radio_on_car:nth-child(3) {
+  left: 25%;
+  top: 72%;
+}
+
+.containerr.block-3 > .land-block > .radio_on_car:nth-child(4) {
+  left: 45%;
+  top: 72%;
+}
+
+.containerr.block-3 > .land-block > .radio_on_car:nth-child(5) {
+  left: 52%;
+  top: 80%;
+}
+
+.containerr.block-3 > .land-block > .radio_on_car:nth-child(6) {
+  left: 60%;
+  top: 78%;
+}
+
+.containerr.block-3 > .land-block > .radio_on_car:nth-child(7) {
+  left: 89%;
+  top: 68%;
+}
+
+.containerr.block-3 > .land-block > .radio_on_car:nth-child(8) {
+  left: 5%;
 }
 
 .intro {
