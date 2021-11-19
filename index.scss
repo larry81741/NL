@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 微軟正黑體;
 }
+//about effect start
 .disableleft-block * {
   display: none !important;
 }
@@ -13,9 +14,12 @@
   transition: all 0.5s;
 }
 .show {
-  width: 50px !important;
-  height: 50px !important;
+  width: 110px !important;
+  height: 55px !important;
   font-size: 15px !important;
+  color: white;
+  font-weight: bold !important;
+  font-size: 30px !important;
 }
 .swiper_settimeout0 {
   opacity: 0;
@@ -23,50 +27,93 @@
 .showswiper {
   width: 70% !important;
 }
-.progress {
-  transform: translate(50%, -180%);
-  right: 0;
-  height: 2px;
-  top: 85%;
-  background-color: red;
-}
-.circle {
-  background-color: white;
-  margin-bottom: 8px;
-  width: 25px;
-  height: 25px;
-  margin-top: 45px;
-}
-.circle.active {
-border: 9px solid red;
-width: 40px;
-height: 40px;
-}
 .showleft-block {
   display: block;
 }
-h3 {
-  font-size: 30px;
-  font-weight: bold;
-  border-top: 3px solid #000;
-  width: 120px;
-  margin-bottom: 50px;
+//about effect end
+.steps {
+  & > .progress {
+    height: 2px;
+    top: 79%;
+    background-color: red;
+  }
+  & > .step {
+    &.hover {
+      &:hover {
+        & > img {
+          transform: scale(1.2);
+          opacity: 1;
+          box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.75);
+        }
+        & > .circle {
+          background-color: white;
+          border: 5px solid red;
+          margin-bottom: 8px;
+          transform: scale(1.5);
+        }
+        & > span {
+          opacity: 1;
+          font-size: 18px;
+        }
+      }
+    }
+    &.click {
+      & > img {
+        transform: scale(1.2);
+        opacity: 1;
+        box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.75);
+      }
+      & > .circle {
+        background-color: white;
+        border: 5px solid red;
+        margin-bottom: 8px;
+        transform: scale(1.5);
+      }
+      & > span {
+        opacity: 1;
+        font-size: 18px;
+      }
+    }
+    & > img {
+      opacity: 0.3;
+      transition: transform 0.5s, opacity 0.5s;
+    }
+    & > .circle {
+      background-color: white;
+      margin-bottom: 8px;
+      width: 25px;
+      height: 25px;
+      margin-top: 45px;
+    }
+    & > span {
+      opacity: 0;
+      transition: opacity 0.5s;
+      color: white;
+    }
+  }
 }
-#block-1 {
-  background-color: chocolate;
+#block1{
+background-color: #34332F;
+}
+
+#block5{
+  background-color: #34332F;
 }
 .containerr {
   max-width: 1920px;
   margin: 0 auto;
   margin-bottom: 50px;
-  padding: 65px 150px 130px 150px;
-  background-color: blanchedalmond;
+  padding: 65px 0px 130px;
+
+
   &.block-1 {
     max-width: 1295px;
     margin: 0 auto;
-  }
-  & > h3 {
-    margin-left: 150px;
+    & > h3 {
+      margin-left: 0;
+      color: white;
+      border-color: white;
+    }
   }
   &.block-3 {
     max-width: 1920px;
@@ -75,9 +122,6 @@ h3 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    & > h3 {
-      margin: 0;
-    }
     & > .land-block {
       background-image: url("./logo_back-02.png");
       background-position: center;
@@ -93,6 +137,8 @@ h3 {
       }
       & > .radio_on_car {
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
         position: absolute;
         transform: translateY(40%);
@@ -101,10 +147,13 @@ h3 {
           height: 30px;
         }
         & > label {
+          display: flex;
+          align-items: center;
+          justify-content: center;
           width: 0px;
           height: 0px;
           font-size: 0;
-          background-color: blueviolet;
+          background-color: black;
           transition: all 0.5s;
         }
       }
@@ -142,9 +191,8 @@ h3 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: aquamarine;
     margin-top: 87px;
-    padding: 0 100px 175px 100px;
+ 
     & > .left-block {
       transition: all 0.5s;
       width: 30%;
@@ -234,19 +282,25 @@ h3 {
   }
   &.block-5 {
     max-width: 1600px;
-    background-color: lightcoral;
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     & > h3 {
-      font-size: 30px;
-      font-weight: bold;
-      border-top: 3px solid #000;
-      width: 120px;
-      margin: 0;
-      margin-bottom: 50px;
+      margin-bottom: 10%;
+      margin-left: 0;
+      color: white;
+      border-color: white;
     }
+  }
+  & > h3 {
+    margin-left: 150px;
+    font-size: 30px;
+    font-weight: bold;
+    border-top: 3px solid #000;
+    width: 120px;
+    margin-bottom: 50px;
   }
 }
 .intro {
@@ -254,6 +308,9 @@ h3 {
   align-items: center;
   justify-content: center;
   font-size: 24px;
+  & > img {
+    width: 63%;
+  }
   & > .text-intro {
     background-color: rgba(255, 255, 255, 0.6);
     width: 37%;
@@ -277,23 +334,15 @@ h3 {
       }
     }
   }
-
   &.top {
     margin-bottom: 200px;
-
-    & > .text-intro {
+    .text-intro {
       transform: translateX(-7%);
-    }
-    & > img {
-      width: 63%;
     }
   }
   &.bot {
     .text-intro {
       transform: translateX(7%);
-    }
-    & > img {
-      width: 63%;
     }
   }
 }
