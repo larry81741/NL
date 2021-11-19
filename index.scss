@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: 微軟正黑體;
 }
+.disableleft-block * {
+  display: none !important;
+}
 .byebye {
   width: 0 !important;
   height: 0 !important;
@@ -13,6 +16,34 @@
   width: 50px !important;
   height: 50px !important;
   font-size: 15px !important;
+}
+.swiper_settimeout0 {
+  opacity: 0;
+}
+.showswiper {
+  width: 70% !important;
+}
+.progress {
+  transform: translate(50%, -180%);
+  right: 0;
+  height: 2px;
+  top: 85%;
+  background-color: red;
+}
+.circle {
+  background-color: white;
+  margin-bottom: 8px;
+  width: 25px;
+  height: 25px;
+  margin-top: 45px;
+}
+.circle.active {
+border: 9px solid red;
+width: 40px;
+height: 40px;
+}
+.showleft-block {
+  display: block;
 }
 h3 {
   font-size: 30px;
@@ -31,101 +62,11 @@ h3 {
   padding: 65px 150px 130px 150px;
   background-color: blanchedalmond;
   &.block-1 {
+    max-width: 1295px;
     margin: 0 auto;
   }
   & > h3 {
     margin-left: 150px;
-  }
-  &.block-2 {
-    & > h3 {
-      margin: 0 auto;
-      margin-bottom: 35px;
-    }
-    input {
-      display: none;
-    }
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-      & > .test1 {
-        display: flex;
-        flex-direction: row;
-        & > .testblock {
-          background-color: aqua;
-          width: 0px;
-          height: 500px;
-          transition: all 0.2s;
-          font-size: 0;
-        }
-      }
-    }
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    #test1:checked ~ .testblock {
-      display: block;
-      width: 500px;
-      font-size: 24px;
-    }
-
-    #test2:checked ~ .testblock {
-      display: block;
-      width: 500px;
-      font-size: 24px;
-    }
-    #test3:checked ~ .testblock {
-      display: block;
-      width: 500px;
-      font-size: 24px;
-    }
-    #test4:checked ~ .testblock {
-      display: block;
-      width: 500px;
-      font-size: 24px;
-    }
-    #test5:checked ~ .testblock {
-      display: block;
-      width: 500px;
-      font-size: 24px;
-    }
-    #test6:checked ~ .testblock {
-      display: block;
-      width: 500px;
-      font-size: 24px;
-    }
-    #test7:checked ~ .testblock {
-      display: block;
-      width: 500px;
-      font-size: 24px;
-    }
-    #test8:checked ~ .testblock {
-      display: block;
-      width: 500px;
-      font-size: 24px;
-    }
   }
   &.block-3 {
     max-width: 1920px;
@@ -205,6 +146,7 @@ h3 {
     margin-top: 87px;
     padding: 0 100px 175px 100px;
     & > .left-block {
+      transition: all 0.5s;
       width: 30%;
       padding-right: 40px;
       & > span {
@@ -249,7 +191,8 @@ h3 {
       }
     }
     & > .testtttt {
-      width: 70%;
+      width: 0%;
+      transition: all 0.5s;
       & > .carSwiper {
         max-width: 880px;
         max-height: 535px;
@@ -287,6 +230,22 @@ h3 {
       margin-top: 42px;
       width: 100%;
       height: 45vw;
+    }
+  }
+  &.block-5 {
+    max-width: 1600px;
+    background-color: lightcoral;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    & > h3 {
+      font-size: 30px;
+      font-weight: bold;
+      border-top: 3px solid #000;
+      width: 120px;
+      margin: 0;
+      margin-bottom: 50px;
     }
   }
 }

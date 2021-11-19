@@ -1,169 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link rel="stylesheet" href="index.css" />
-</head>
-
-<body>
-  <section id="block-1">
-    <div class="containerr block-1">
-      <h3>產品介紹</h3>
-      <div class="intro top">
-        <img src="https://dummyimage.com/420x260" alt="" />
-        <div class="text-intro">
-          <span>改色膜</span>
-          <ul>
-            <li>
-              延壓型<i class="fas fa-play"></i>顏色多，好洗車，抗污、亮度高
-            </li>
-            <li>
-              鑄造型<i class="fas fa-play"></i>延展性佳 色澤飽滿 不易有色差
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="intro bot">
-        <div class="text-intro">
-          <span>犀牛皮(透明/霧面)</span>
-          <ul>
-            <li>
-              高規<i class="fas fa-play"></i>具有鍍膜效果 任性強 擦傷保護力強
-            </li>
-            <li>
-              中規<i class="fas fa-play"></i>壽命在兩年左右，抗污性稍稍加強
-            </li>
-            <li>低規<i class="fas fa-play"></i>便宜，常用於手機包膜</li>
-          </ul>
-        </div>
-        <img src="https://dummyimage.com/420x260" alt="" />
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="containerr block-3">
-      <h3>過往案例</h3>
-      <div class="land-block">
-        <img src="./car-02.png" alt="" />
-        <div class="radio_on_car">
-          <label for="btn_1" data-place="0">1</label>
-          <input type="radio" name="btu" id="btn_1" />
-        </div>
-        <div class="radio_on_car">
-          <label for="btn_2" data-place="1">2</label>
-          <input type="radio" name="btu" id="btn_2" />
-        </div>
-        <div class="radio_on_car">
-          <label for="btn_3" data-place="2">3</label>
-          <input type="radio" name="btu" id="btn_3" />
-        </div>
-        <div class="radio_on_car">
-          <label for="btn_4" data-place="3">4</label>
-          <input type="radio" name="btu" id="btn_4" />
-        </div>
-        <div class="radio_on_car">
-          <label for="btn_5" data-place="4">5</label>
-          <input type="radio" name="btu" id="btn_5" />
-        </div>
-        <div class="radio_on_car">
-          <label for="btn_6" data-place="5">6</label>
-          <input type="radio" name="btu" id="btn_6" />
-        </div>
-        <div class="radio_on_car">
-          <label for="btn_7" data-place="all">7</label>
-          <input type="radio" name="btu" id="btn_7" />
-        </div>
-      </div>
-    </div>
-    <div class="containerr block-4">
-      <div class="left-block">
-        <span>引擎蓋</span>
-        <div class="btn-block">
-          <div class="btn1 " data-skin="0">改色膜</div>
-          <div class="btn2"data-skin="1">犀牛皮</div>
-        </div>
-        <a href="">更多照片 ></a>
-      </div>
-      <div class="testtttt">
-        <div class="swiper  carSwiper">
-          <div class="swiper-wrapper">
+  <body>
+    <section id="block-1">
+      <div class="containerr block-1">
+        <h3>產品介紹</h3>
+        <div class="intro top">
+          <img src="https://dummyimage.com/420x260" alt="" />
+          <div class="text-intro">
+            <span>改色膜</span>
+            <ul>
+              <li>
+                延壓型<i class="fas fa-play"></i>顏色多，好洗車，抗污、亮度高
+              </li>
+              <li>
+                鑄造型<i class="fas fa-play"></i>延展性佳 色澤飽滿 不易有色差
+              </li>
+            </ul>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="intro bot">
+          <div class="text-intro">
+            <span>犀牛皮(透明/霧面)</span>
+            <ul>
+              <li>
+                高規<i class="fas fa-play"></i>具有鍍膜效果 任性強 擦傷保護力強
+              </li>
+              <li>
+                中規<i class="fas fa-play"></i>壽命在兩年左右，抗污性稍稍加強
+              </li>
+              <li>低規<i class="fas fa-play"></i>便宜，常用於手機包膜</li>
+            </ul>
+          </div>
+          <img src="https://dummyimage.com/420x260" alt="" />
         </div>
       </div>
+    </section>
+    <section>
+      <div class="containerr block-3">
+        <h3>過往案例</h3>
+        <div class="land-block">
+          <img src="./car-02.png" alt="" />
+          <div class="radio_on_car">
+            <label for="btn_1" data-place="0">1</label>
+            <input type="radio" name="btu" id="btn_1" />
+          </div>
+          <div class="radio_on_car">
+            <label for="btn_2" data-place="1">2</label>
+            <input type="radio" name="btu" id="btn_2" />
+          </div>
+          <div class="radio_on_car">
+            <label for="btn_3" data-place="2">3</label>
+            <input type="radio" name="btu" id="btn_3" />
+          </div>
+          <div class="radio_on_car">
+            <label for="btn_4" data-place="3">4</label>
+            <input type="radio" name="btu" id="btn_4" />
+          </div>
+          <div class="radio_on_car">
+            <label for="btn_5" data-place="4">5</label>
+            <input type="radio" name="btu" id="btn_5" />
+          </div>
+          <div class="radio_on_car">
+            <label for="btn_6" data-place="5">6</label>
+            <input type="radio" name="btu" id="btn_6" />
+          </div>
+          <div class="radio_on_car">
+            <label for="btn_7" data-place="all">7</label>
+            <input type="radio" name="btu" id="btn_7" />
+          </div>
+        </div>
+      </div>
+      <div class="containerr block-4">
+        <div class="left-block disableleft-block">
+          <span>引擎蓋</span>
+          <div class="btn-block">
+            <div class="btn1" data-skin="0">改色膜</div>
+            <div class="btn2" data-skin="1">犀牛皮</div>
+          </div>
+          <a href="">更多照片 ></a>
+        </div>
+        <div class="testtttt">
+          <div class="swiper carSwiper">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
 
-      <iframe src="https://www.youtube.com/embed/efmlR9-r2H0" title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
-  </section>
+        <iframe
+          src="https://www.youtube.com/embed/efmlR9-r2H0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <section>
+      <div class="containerr block-5">
+        <h3>服務流程</h3>
+        <div class="steps border-bottom d-flex  w-100 pb-4">
+          
+          <div
+              class="step w-25 d-flex flex-column align-items-center justify-content-center  position-relative">
+              <div class="progress position-absolute col-6 col-sm-7 col-lg-9">
+
+              </div>
+              <img src="./aaaa.jpg" alt="">
+              <div class="circle  d-flex align-items-center justify-content-center rounded-circle actived">
+                  
+              </div>
+              <span>來電詢問/私訊粉專</span>
+
+          </div>
+          <div
+              class="step  w-25 d-flex flex-column align-items-center justify-content-center position-relative">
+              <div class="progress position-absolute col-6 col-sm-7 col-lg-9">
+              </div>
+              <img src="./aaaa.jpg" alt="">
+              <div class="circle  d-flex align-items-center justify-content-center rounded-circle ">
+                  
+              </div>
+              <span>現場洽談選膜</span>
+
+          </div>
+          <div
+              class="step  w-25 d-flex flex-column align-items-center justify-content-center position-relative">
+              <div class="progress position-absolute col-6 col-sm-7 col-lg-9">
+              </div>
+              <img src="./aaaa.jpg" alt="">
+              <div class="circle active  d-flex align-items-center justify-content-center rounded-circle ">
+                  
+              </div>
+              <span>安排包膜時間(約3-5工作天)</span>
+
+          </div>
+          <div class="step  w-25 d-flex flex-column align-items-center justify-content-center">
+            <img src="./aaaa.jpg" alt="">
+              <div class="circle  d-flex align-items-center justify-content-center rounded-circle ">
+                  
+              </div>
+              <span>點交交車</span>
+          </div>
+      </div>
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/cda6c7a130.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".carSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      const photos = [
+        //資料存取處
+        { myurl: "./unnamed.jpg", place: "1", skin: "0" },
+        { myurl: "./aaaa.jpg", place: "1", skin: "1" },
+      ];
+      const carswiper = document.querySelector(".carSwiper>.swiper-wrapper");
+      const test = document.querySelectorAll("[name='btu']"); //選取按鈕
+      const btns = document.querySelectorAll(".btn-block>div");
+      const spandata = document.querySelector(".block-4>.left-block>span"); //圖片下的span(車體部位)
+      const showswiper = document.querySelector(".testtttt");
+      const leftblock = document.querySelector(".left-block");
+
+      test.forEach((aaa) => aaa.addEventListener("click", showdata)); //把按鈕加監聽器&點擊事件
+      btns.forEach((bbb) => bbb.addEventListener("click", showdata));
+
+      function showdata() {
+        test.forEach((aaa) =>
+          aaa.previousElementSibling.classList.remove("show")
+        ); //重製畫面
+        test.forEach((aaa) => aaa.classList.remove("byebye")); //重製畫面
+        showswiper.classList.add("showswiper");
+        showswiper.classList.add("swiper_settimeout0");
+        setTimeout(function () {
+          showswiper.classList.remove("swiper_settimeout0");
+          leftblock.classList.remove("swiper_settimeout0");
+        }, 200);
+        this.previousElementSibling.classList.add("show"); //新增class ->顯現
+        this.classList.add("byebye"); //新增class->消失
+        leftblock.classList.remove("disableleft-block");
+        leftblock.classList.add("swiper_settimeout0");
+        spandata.innerHTML = this.previousElementSibling.innerHTML;
+        // console.log(spandata.innerHTML);
 
 
-  <script src="https://kit.fontawesome.com/cda6c7a130.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".carSwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-  <script>
-    const photos = [    //資料存取處
-      { myurl: './unnamed.jpg', place: '1', skin: "0" },
-      { myurl: './aaaa.jpg', place: '1', skin: "1" }
-    ];
-    const carswiper=document.querySelector(".carSwiper>.swiper-wrapper");
-    const test = document.querySelectorAll("[name='btu']"); //選取按鈕
-    const btns =document.querySelectorAll(".btn-block>div");
-    const spandata = document.querySelector(".block-4>.left-block>span") //圖片下的span(車體部位)
-    test.forEach((aaa) => aaa.addEventListener("click", testa));//把按鈕加監聽器&點擊事件 
-    btns.forEach(bbb=>bbb.addEventListener("click", testa));
-    function testa() {
-      test.forEach((aaa) => aaa.previousElementSibling.classList.remove("show")); //重製畫面
-      test.forEach((aaa) => aaa.classList.remove("byebye"));//重製畫面
-      this.previousElementSibling.classList.add('show'); //新增class ->顯現
-      this.classList.add('byebye');//新增class->消失
-
-
-      spandata.innerHTML = this.previousElementSibling.innerHTML;
-      // console.log(spandata.innerHTML);
-      console.log(this.previousElementSibling.dataset.place);
-      carswiper.innerHTML="";
-      for (let index = 0; index < photos.length; index++) {
-        if (this.previousElementSibling.dataset.place == photos[index].place) {  
-          //1 0
-          carswiper.innerHTML+=`<div class="swiper-slide"><img src="${photos[index].myurl}" alt=""></div>`
+        carswiper.innerHTML = "";
+        for (let index = 0; index < photos.length; index++) {
+          if (
+            this.previousElementSibling.dataset.place == photos[index].place
+          ) {
+            carswiper.innerHTML += `<div class="swiper-slide"><img src="${photos[index].myurl}" alt=""></div>`;
+          }
         }
       }
-    }
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
-
-
-
