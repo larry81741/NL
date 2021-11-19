@@ -329,6 +329,11 @@
   font-size: 18px;
 }
 
+.containerr.block-4 > .left-block > .btn-block > div.active {
+  background-color: #AE2020;
+  color: white;
+}
+
 .containerr.block-4 > .left-block > .swiper {
   width: 70%;
 }

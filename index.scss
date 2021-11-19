@@ -223,6 +223,10 @@ background-color: #34332F;
         display: flex;
         align-items: center;
         & > div {
+          &.active{
+            background-color:#AE2020 ;
+            color: white;
+          }
           display: flex;
           align-items: center;
           justify-content: center;
