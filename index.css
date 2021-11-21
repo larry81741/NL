@@ -41,7 +41,7 @@
 
 .steps > .progress {
   height: 2px;
-  top: 79%;
+  top: 80%;
   background-color: red;
 }
 
@@ -342,11 +342,13 @@
   width: 0%;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  max-width: 880px;
+  max-height: 535px;
 }
 
 .containerr.block-4 > .testtttt > .carSwiper {
-  max-width: 880px;
-  max-height: 535px;
+  -webkit-box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.75);
+          box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.75);
   width: 100%;
   height: 100%;
 }

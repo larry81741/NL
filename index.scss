@@ -34,7 +34,7 @@
 .steps {
   & > .progress {
     height: 2px;
-    top: 79%;
+    top:80%;
     background-color: red;
   }
   & > .step {
@@ -245,9 +245,10 @@ background-color: #34332F;
     & > .testtttt {
       width: 0%;
       transition: all 0.5s;
+      max-width: 880px;
+      max-height: 535px;
       & > .carSwiper {
-        max-width: 880px;
-        max-height: 535px;
+        box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.75);
         width: 100%;
         height: 100%;
         & > .swiper-wrapper {
