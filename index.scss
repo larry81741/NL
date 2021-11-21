@@ -4,6 +4,184 @@
   box-sizing: border-box;
   font-family: 微軟正黑體;
 }
+//阿喜start
+
+#about,
+#Label-choose,
+#store {
+  height: 100vh;
+  width: 100%;
+}
+
+#FAQ {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* 登入畫面 */
+#all {
+  display: none;
+}
+
+#loading {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+@keyframes progress {
+  from {
+    width: 5%;
+    left: -5%;
+  }
+
+  to {
+    width: 75%;
+    left: 105%;
+  }
+}
+
+//navstart
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-image: url(./img/NAV-05.jpg);
+  background-size: cover;
+}
+
+.logo {
+  width: 80px;
+  border-radius: 50%;
+  @media (max-width: 1420px) {
+    position: unset !important;
+    transform: unset !important;
+    margin-left: 48px;
+  }
+  @media (max-width: 1200px) {
+    position: absolute !important;
+    transform: translate(-50%, 0) !important;
+    left: 50%;
+  }
+}
+.links > img:hover {
+  transform: rotate(360deg);
+}
+
+.nav-item > a:hover {
+  transform: scale(1.2);
+  color: rgb(0, 140, 255) !important;
+}
+
+.dropdown-menu {
+  position: absolute;
+  z-index: 10;
+  display: none;
+  min-width: 160px;
+  padding: 0;
+  font-size: 20px;
+  background-color: #34332f;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+#navbarDropdown {
+  display: none;
+  @media (max-width: 1200px) {
+      display: block;
+  }
+}
+@media (max-width: 920px) {
+  .about-info {
+    width: 100% !important;
+    align-items: center !important;
+    left: 50% !important;
+    transform: translate(-50%, 0) !important;
+  }
+  .store-info {
+    background-color: black;
+    border: none !important;
+  }
+}
+//navend
+//circle start
+
+.choose-circle {
+  width: 65vh;
+  height: 65vh;
+  /* border: 50px solid #CD2525; */
+  /* 還沒下陰影 */
+  background-image: url(img/圓圈無陰影.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.choose-line {
+  width: 35%;
+  height: 5px;
+  background: white;
+  position: absolute;
+  top: 5%;
+  transform: rotate(90deg);
+}
+
+.company {
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+}
+//circle end
+
+// store information start
+.rwdmap {
+  display: none;
+}
+
+@media (max-width: 770px) {
+  .store-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px !important;
+    padding-top: 0 !important;
+  }
+
+  .store-logo {
+    width: 100px !important;
+    height: 100px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .map {
+    display: none;
+  }
+
+  .rwdmap {
+    display: block;
+  }
+
+  .info {
+    width: 100% !important;
+    margin-left: 0 !important;
+    align-items: center;
+  }
+
+  .location {
+    flex-direction: column;
+    margin-top: 0 !important;
+  }
+}
+
+// store information end
+
+//阿喜end
 //about effect start
 .disableleft-block * {
   display: none !important;
@@ -34,7 +212,7 @@
 .steps {
   & > .progress {
     height: 2px;
-    top:80%;
+    top: 80%;
     background-color: red;
   }
   & > .step {
@@ -92,19 +270,18 @@
     }
   }
 }
-#block1{
-background-color: #34332F;
+#block1 {
+  background-color: #34332f;
 }
 
-#block5{
-  background-color: #34332F;
+#block5 {
+  background-color: #34332f;
 }
 .containerr {
   max-width: 1920px;
   margin: 0 auto;
   margin-bottom: 50px;
   padding: 65px 0px 130px;
-
 
   &.block-1 {
     max-width: 1295px;
@@ -192,7 +369,7 @@ background-color: #34332F;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 87px;
- 
+
     & > .left-block {
       transition: all 0.5s;
       width: 30%;
@@ -223,8 +400,8 @@ background-color: #34332F;
         display: flex;
         align-items: center;
         & > div {
-          &.active{
-            background-color:#AE2020 ;
+          &.active {
+            background-color: #ae2020;
             color: white;
           }
           display: flex;

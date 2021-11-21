@@ -1,117 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>NL汽車包膜</title>
 
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+  <!-- Animate.css CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
   <link rel="stylesheet" href="index.css" />
 </head>
 
-<body>
-  <section id="block1">
-    <div class="containerr block-1">
-      <h3>產品介紹</h3>
-      <div class="intro top">
-        <img src="https://dummyimage.com/420x260" alt="" />
-        <div class="text-intro">
-          <span>改色膜</span>
-          <ul>
-            <li>
-              延壓型<i class="fas fa-play"></i>顏色多，好洗車，抗污、亮度高
-            </li>
-            <li>
-              鑄造型<i class="fas fa-play"></i>延展性佳 色澤飽滿 不易有色差
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="intro bot">
-        <div class="text-intro">
-          <span>犀牛皮(透明/霧面)</span>
-          <ul>
-            <li>
-              高規<i class="fas fa-play"></i>具有鍍膜效果 任性強 擦傷保護力強
-            </li>
-            <li>
-              中規<i class="fas fa-play"></i>壽命在兩年左右，抗污性稍稍加強
-            </li>
-            <li>低規<i class="fas fa-play"></i>便宜，常用於手機包膜</li>
-          </ul>
-        </div>
-        <img src="https://dummyimage.com/420x260" alt="" />
+<body onload="myFunction()">
+  <div id="loading">
+    <div id="loadcontainer" class="d-flex flex-column align-items-center" style="width: 60%;">
+      <img class="loadLOGO" src="./img/NLLOGO.jpg" width="300px" height="300px" alt="">
+      <div class="inner_progress position-relative" style="height: 9px;
+        width: 90%;
+        margin-top: 5vh;
+        margin-left: 5%;
+        background-color: white;
+        border-radius: 5px;
+        overflow: hidden;">
+        <div class="inner_progress_bar position-absolute" style="height: 9px;
+            background-color: red;
+            animation: progress 1.5s infinite;"></div>
       </div>
     </div>
-  </section>
-  <section id="block3">
-    <div class="containerr block-3">
-      <h3>過往案例</h3>
-      <div class="land-block">
-        <img src="./car-02.png" alt="" />
-        <div class="radio_on_car">
-          <label for="btn_1" data-place="0" class="radio">1</label>
-          <input type="radio" name="btu" id="btn_1" />
-        </div>
-        <div class="radio_on_car">
-          <label for="btn_2" data-place="1" class="radio" class="radio">2</label>
-          <input type="radio" name="btu" id="btn_2" />
-        </div>
-        <div class="radio_on_car">
-          <label for="btn_3" data-place="2" class="radio">3</label>
-          <input type="radio" name="btu" id="btn_3" />
-        </div>
-        <div class="radio_on_car">
-          <label for="btn_4" data-place="3" class="radio">4</label>
-          <input type="radio" name="btu" id="btn_4" />
-        </div>
-        <div class="radio_on_car">
-          <label for="btn_5" data-place="4" class="radio">5</label>
-          <input type="radio" name="btu" id="btn_5" />
-        </div>
-        <div class="radio_on_car">
-          <label for="btn_6" data-place="5" class="radio">6</label>
-          <input type="radio" name="btu" id="btn_6" />
-        </div>
-        <div class="radio_on_car">
-          <label for="btn_7" data-place="all" class="radio">7</label>
-          <input type="radio" name="btu" id="btn_7" />
-        </div>
-      </div>
-    </div>
-    <div class="containerr block-4">
-      <div class="left-block disableleft-block">
-        <span>引擎蓋</span>
-        <div class="btn-block">
-          <div class="btn0" style="display: none"></div>
-          <div class="btn1" data-skin="1">改色膜</div>
-          <div class="btn2" data-skin="2">犀牛皮</div>
-        </div>
-        <a href="">更多照片 ></a>
-      </div>
-      <div class="testtttt">
-        <div class="swiper carSwiper">
-          <div class="swiper-wrapper"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
+  </div>
+  <section id="all" style="display: none;">
+    <nav class="navbar navbar-expand-xl  navbar-light  p-0 position-fixed d-flex align-items-center  w-100 "
+      style="z-index: 3;">
+      <!-- LOGO -->
+      <a class="logo position-absolute ms-0 " style=" left:50% ; transform: translate(-50%, 0)" href="#">
+        <img src="img/NLLOGO.jpg" width="100%" alt="" style="border-radius: 50%;">
+      </a>
+      <!-- 連結ICON -->
+      <div class=" ps-5">
+        <a href="" class="links text-decoration-none">
+          <img src="img/facebook_1.png" class="bg-white" style="border-radius: 10px;transition: 1s;" width="35px"
+            alt="">
+        </a>
+        <a class="links ms-3 me-3 text-decoration-none" href="">
+          <img src="img/instagram.png" width="35px" alt="" style="transition: 1s;">
+        </a>
+        <a href="" class="links text-decoration-none">
+          <img src="img/Google__G__Logo.svg.png" width="35px" alt="" style="transition: 1s;">
+        </a>
       </div>
 
-      <iframe src="https://www.youtube.com/embed/h9hwjo_zDuc" title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </section>
-  <section id="block5">
-    <div class="containerr block-5">
-      <h3>服務流程</h3>
-      <div class="steps d-flex w-100 pb-4 position-relative">
-        <div class="progress position-absolute col-6 col-sm-7 col-lg-12"></div>
-        <div class="
+
+      <div class="nav-item dropdown position-relative  " style="z-index: 5;width: 200px;">
+        <a class="nav-link p-0 text-white text-center" id="navbarDropdown" data-bs-toggle="dropdown"
+          aria-expanded="false" role="button" aria-expanded="true" style="font-size: 60px;">
+          <i class="bi bi-list "></i>
+        </a>
+        <div class="dropdown-menu text-white me-0 w-100" aria-labelledby="navbarDropdown" style="list-style-type:circle;">
+          <a class="dropdown-item text-white text-center border-bottom  mt-2  pb-2" href="#">關於我們</a>
+          <a class="dropdown-item text-white text-center mt-2" href="#Label-choose">品牌選用</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item text-white text-center" href="#">技術流程</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item text-white text-center" href="#">實績案例</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item text-white text-center mb-2" href="#FAQ">FAQ</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item text-white text-center mb-2" href="#store">門市資訊</a>
+        </div>
+      </div>
+      <!-- 導覽列選項 -->
+
+      <div class="collapse navbar-collapse pe-5">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item ">
+            <a class="nav-link h5 mb-0 font-weight-bolder text-white" href="#">關於我們</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link h5 mb-0 font-weight-bolder text-white" href="#Label-choose">品牌選用</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link h5 mb-0 font-weight-bolder text-white" href="#">技術流程</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link h5 mb-0 font-weight-bolder text-white" href="#">實績案例</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link h5 mb-0 font-weight-bolder text-white" href="#FAQ">FAQ</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link h5 mb-0 font-weight-bolder text-white" href="#store">門市資訊</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="about" style="padding-top: 100px;">
+      <div class="position-relative"
+        style=" width: 100;height: 100%;background-image: url(./img/BANNER/一開始-04.jpg); background-size: cover;background-position: center ; background-repeat: no-repeat;z-index: 0;">
+        <div
+          class="animate__animated animate__fadeIn animate__slow	2s animate__delay-1s aboutus aboutus d-flex  position-relative "
+          style="height: 100%;width: 100%; background-image: url(./img/BANNER/正常-04.jpg);background-size: cover;background-position:  center ;background-repeat: no-repeat;z-index: 1;">
+          <!-- <img src="./img/BANNER/BANNER左.png" class="position-relative" data-aos="fade-right" data-aos-duration="3000" height="100%" alt="" style="left: 5%;"> -->
+          <div
+            class="about-info animate__animated animate__fadeInUp animate__delay-2s animate__slow	3s w-50 position-absolute text-left text-white d-flex flex-column "
+            style="top: 10%;left: 10%;">
+            <h4 class="font-weight-bold mb-5 " style="font-size: 80px;">NL車體包膜</h4>
+            <p class="about-word  " style="font-size: 28px;">Never land 打造獨特愛車的夢幻島。</p>
+            <p class="about-word  " style="font-size: 28px;">服務第一、品質第一、價格合理!</p>
+            <a class="store-info  rounded-pill   mt-5 p-3 d-flex align-items-center text-center  " href=""
+              style="border: 3px solid white; width: 240px;text-decoration: none;">
+              <span class=" text-white font-weight-bolder m-auto " style="font-size: 24px;letter-spacing: 5px;"
+                href="#">門市資訊</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 暫離區  原本右中圖片 -->
+      <!-- <div class="about-img position-absolute " style="top: 50% ;right: 0; transform: translate(0, -50%)"></div> -->
+    </section>
+    <section id="Label-choose" class=""
+      style="background-image: url(./img/品牌/logo_back-02.png);background-size :130%;background-position: left; background-repeat: no-repeat; background-color: #34332F;padding-top: 100px;">
+      <div class="container d-flex flex-column  justify-content-center align-items-center">
+        <p class="text-white mt-5 mb-4 me-auto  d-inline" style="font-size: 28px;border-top: white 3px solid;">
+          品牌選用</p>
+        <div class="choose-circle position-relative  d-flex align-items-center justify-content-center">
+          <div
+            class="choose-text d-flex flex-column  align-items-center justify-content-center h-50 w-50  position-absolute ">
+            <div class="choose-line"></div>
+            <span class="text-white" style="font-size: 24px;">3M</span>
+            <p class="text-white h6 mb-3">我是暫定文字我是暫定文字我是暫定文字我是暫定文字我是暫定文字我是暫定文字我是暫定文字</p>
+          </div>
+          <div class="label position-absolute " style="top: -10%;">
+            <div class="company d-flex align-items-center bg-white ">
+              <img src="img/品牌/3M.png" style="max-width: 100%
+                    ;max-height: 100%;" alt="">
+            </div>
+
+          </div>
+          <div class="company position-absolute d-flex align-items-center"
+            style="bottom: 3%;left: 0;background-color: white;opacity: 0.5;">
+            <img src="img/品牌/AXFILMX.png" style="max-width: 100%;max-height: 100%;" alt="">
+          </div>
+          <div class="company position-absolute d-flex align-items-center"
+            style="bottom: 3%;right: 0;background-color: white;opacity: 0.5;">
+            <img src="img/品牌/ATARAPA.jpg" style="max-width: 100%;max-height: 100%; " alt="">
+          </div>
+
+        </div>
+        <div class="skinchoose-btns">
+
+        </div>
+      </div>
+    </section>
+    <section id="block1">
+      <div class="containerr block-1">
+        <h3>產品介紹</h3>
+        <div class="intro top">
+          <img src="https://dummyimage.com/420x260" alt="" />
+          <div class="text-intro">
+            <span>改色膜</span>
+            <ul>
+              <li>
+                延壓型<i class="fas fa-play"></i>顏色多，好洗車，抗污、亮度高
+              </li>
+              <li>
+                鑄造型<i class="fas fa-play"></i>延展性佳 色澤飽滿 不易有色差
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="intro bot">
+          <div class="text-intro">
+            <span>犀牛皮(透明/霧面)</span>
+            <ul>
+              <li>
+                高規<i class="fas fa-play"></i>具有鍍膜效果 任性強 擦傷保護力強
+              </li>
+              <li>
+                中規<i class="fas fa-play"></i>壽命在兩年左右，抗污性稍稍加強
+              </li>
+              <li>低規<i class="fas fa-play"></i>便宜，常用於手機包膜</li>
+            </ul>
+          </div>
+          <img src="https://dummyimage.com/420x260" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="block3">
+      <div class="containerr block-3">
+        <h3>過往案例</h3>
+        <div class="land-block">
+          <img src="./car-02.png" alt="" />
+          <div class="radio_on_car">
+            <label for="btn_1" data-place="0" class="radio">1</label>
+            <input type="radio" name="btu" id="btn_1" />
+          </div>
+          <div class="radio_on_car">
+            <label for="btn_2" data-place="1" class="radio" class="radio">2</label>
+            <input type="radio" name="btu" id="btn_2" />
+          </div>
+          <div class="radio_on_car">
+            <label for="btn_3" data-place="2" class="radio">3</label>
+            <input type="radio" name="btu" id="btn_3" />
+          </div>
+          <div class="radio_on_car">
+            <label for="btn_4" data-place="3" class="radio">4</label>
+            <input type="radio" name="btu" id="btn_4" />
+          </div>
+          <div class="radio_on_car">
+            <label for="btn_5" data-place="4" class="radio">5</label>
+            <input type="radio" name="btu" id="btn_5" />
+          </div>
+          <div class="radio_on_car">
+            <label for="btn_6" data-place="5" class="radio">6</label>
+            <input type="radio" name="btu" id="btn_6" />
+          </div>
+          <div class="radio_on_car">
+            <label for="btn_7" data-place="all" class="radio">7</label>
+            <input type="radio" name="btu" id="btn_7" />
+          </div>
+        </div>
+      </div>
+      <div class="containerr block-4">
+        <div class="left-block disableleft-block">
+          <span>引擎蓋</span>
+          <div class="btn-block">
+            <div class="btn0" style="display: none"></div>
+            <div class="btn1" data-skin="1">改色膜</div>
+            <div class="btn2" data-skin="2">犀牛皮</div>
+          </div>
+          <a href="">更多照片 ></a>
+        </div>
+        <div class="testtttt">
+          <div class="swiper carSwiper">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+        <iframe src="https://www.youtube.com/embed/h9hwjo_zDuc" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+    <section id="block5">
+      <div class="containerr block-5">
+        <h3>服務流程</h3>
+        <div class="steps d-flex w-100 pb-4 position-relative">
+          <div class="progress position-absolute col-6 col-sm-7 col-lg-12"></div>
+          <div class="
               step
               hover
               w-25
@@ -121,8 +265,8 @@
               justify-content-center
               position-relative
             ">
-          <img src="./aaaa.jpg" alt="" />
-          <div class="
+            <img src="./aaaa.jpg" alt="" />
+            <div class="
           circle
           active
           d-flex
@@ -130,9 +274,9 @@
           justify-content-center
           rounded-circle
               "></div>
-          <span>來電詢問/私訊粉專</span>
-        </div>
-        <div class="
+            <span>來電詢問/私訊粉專</span>
+          </div>
+          <div class="
               step
               hover
               w-25
@@ -142,17 +286,17 @@
               justify-content-center
               position-relative
             ">
-          <img src="./aaaa.jpg" alt="" />
-          <div class="
+            <img src="./aaaa.jpg" alt="" />
+            <div class="
                 circle
                 d-flex
                 align-items-center
                 justify-content-center
                 rounded-circle
               "></div>
-          <span>現場洽談選膜</span>
-        </div>
-        <div class="
+            <span>現場洽談選膜</span>
+          </div>
+          <div class="
               step
               hover
               w-25
@@ -163,8 +307,8 @@
               position-relative
               active
             ">
-          <img src="./aaaa.jpg" alt="" />
-          <div class="
+            <img src="./aaaa.jpg" alt="" />
+            <div class="
                 circle
                 active
                 d-flex
@@ -172,9 +316,9 @@
                 justify-content-center
                 rounded-circle
               "></div>
-          <span>安排包膜時間(約3-5工作天)</span>
-        </div>
-        <div class="
+            <span>安排包膜時間(約3-5工作天)</span>
+          </div>
+          <div class="
               step
               hover
               w-25
@@ -184,18 +328,133 @@
               justify-content-center
               position-relative
             ">
-          <img src="./aaaa.jpg" alt="" />
-          <div class="
+            <img src="./aaaa.jpg" alt="" />
+            <div class="
                 circle
                 d-flex
                 align-items-center
                 justify-content-center
                 rounded-circle
               "></div>
-          <span>來電詢問/私訊粉專</span>
+            <span>來電詢問/私訊粉專</span>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section id="FAQ" style="background-color: #B02020;padding-top: 100px;">
+      <div class="container  position-relative d-flex flex-column justify-content-center" style="height: 100%;">
+        <span class="mt-5" style="width: 70px;border-bottom: 3px white solid;"></span>
+        <p class="text-white  " style="font-size: 36px;">FAQ</p>
+        <p class="text-white  mb-5" style="font-size: 36px;">常見汽車包膜問題(?</p>
+        <div class="QA ">
+          <div class="Q d-flex align-items-center" style="height: 100px;border-top: 3px white solid;">
+            <p class="text-white m-0" style="font-size: 30px;">Q:服務項目有哪些?
+            <h1 class="text-white   ms-auto mb-0" type="button"
+              onclick="document.all.fullContent1.style.display=(document.all.fullContent1.style.display=='none')?'':'none';document.all.smallContent.style.display=(document.all.smallContent.style.display=='none')?'':'none'">
+              +</h1>
+            </p>
+          </div>
+          <div class="A animate__animated animate__fadeInDown " id="fullContent1" style="height: 100px;display: none;">
+            <p class="text-white m-0 pt-3" style="font-size: 16x;">A:【全車改色包膜】【全車犀牛皮】【犀牛皮迎風面】【汽車燈膜】</p>
+          </div>
+        </div>
+        <div class="QA ">
+          <div class="Q d-flex align-items-center" style="height: 100px;border-top: 3px white solid;">
+            <p class="text-white m-0" style="font-size: 30px;">
+              Q:包膜是什麼?
+            <h1 class="text-white   ms-auto mb-0" type="button"
+              onclick="document.all.fullContent2.style.display=(document.all.fullContent2.style.display=='none')?'':'none';document.all.smallContent.style.display=(document.all.smallContent.style.display=='none')?'':'none'">
+              +</h1>
+            </p>
+          </div>
+          <div class="A animate__animated animate__fadeInDown " id="fullContent2" style="height: 100px;display: none;">
+            <p class="text-white m-0 pt-3" style="font-size: 16x;">
+              A:是繼鍍晶後，另一個更有效率的汽車護理，不僅可有效防止跳石、微塵刮傷車身，更具有自體修復功能，讓愛車隨時隨地看起來亮麗如新。</p>
+          </div>
+        </div>
+        <div class="QA ">
+          <div class="Q d-flex align-items-center" style="height: 100px;border-top: 3px white solid;">
+            <p class="text-white m-0" style="font-size: 30px;">
+              Q:全車施工大約需要多少個工作天呢？
+            <h1 class="text-white   ms-auto mb-0" type="button"
+              onclick="document.all.fullContent3.style.display=(document.all.fullContent3.style.display=='none')?'':'none';document.all.smallContent.style.display=(document.all.smallContent.style.display=='none')?'':'none'">
+              +</h1>
+            </p>
+          </div>
+          <div class="A animate__animated animate__fadeInDown " id="fullContent3" style="height: 100px;display: none;">
+            <p class="text-white m-0 pt-3" style="font-size: 16x;">A:根據天氣狀況需要3至7個工作天不等。</p>
+          </div>
+        </div>
+        <div class="QA ">
+          <div class="Q d-flex align-items-center" style="height: 100px;border-top: 3px white solid;">
+            <p class="text-white m-0" style="font-size: 30px;">Q:施工時是否需要拆車?
+            <h1 class="text-white   ms-auto mb-0" type="button"
+              onclick="document.all.fullContent4.style.display=(document.all.fullContent4.style.display=='none')?'':'none';document.all.smallContent.style.display=(document.all.smallContent.style.display=='none')?'':'none'">
+              +</h1>
+            </p>
+          </div>
+          <div class="A animate__animated animate__fadeInDown " id="fullContent4" style="height: 100px;display: none;">
+            <p class="text-white m-0 pt-3" style="font-size: 16x;">A:我們可以配合您的需求可拆、可不拆。拆裝優點
+              :施工後更完美，不容易翹邊翹角；不拆裝優點:整車保持完整。</p>
+          </div>
+        </div>
+        <div class="QA ">
+          <div class="Q d-flex align-items-center" style="height: 100px;border-top: 3px white solid;">
+            <p class="text-white m-0" style="font-size: 30px;">Q:包膜後，後續清潔保養方式?
+            <h1 class="text-white   ms-auto mb-0" type="button"
+              onclick="document.all.fullContent5.style.display=(document.all.fullContent5.style.display=='none')?'':'none';document.all.smallContent.style.display=(document.all.smallContent.style.display=='none')?'':'none'">
+              +</h1>
+            </p>
+          </div>
+          <div class="A animate__animated animate__fadeInDown " id="fullContent5" style="height: 100px;display: none;">
+            <p class="text-white m-0 pt-3" style="font-size: 16x;">
+              A:使用簡單清水搭配泡沫清洗即可，但建議固定3到4個月回店裡檢查做深層清潔，以延長使用壽命。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="store" class=" position-relative" style="padding-top: 100px;">
+      <div class="container d-flex flex-column  " style="height: 100%;">
+        <div class="store-title mt-5 pt-5" style="width: 100%;">
+          <div class="" style="width: 150px;border-bottom:  3px black solid;"></div>
+          <p class="font-weight-bolder" style="font-size: 36px;">門市資訊</p>
+        </div>
+        <div class="location mt-5  d-flex ">
+          <div class="map   " style="width: 80%;height: 40vh;background-color: gray;"></div>
+          <div class="info h4 ms-5   d-flex flex-column justify-content-around " style="width: 50%; height: 100%;">
+            <div class="store-logo d-flex mb-5 " style="height: 150px;width: 150px;">
+              <img class="rounded-circle" src="img/NLLOGO.jpg" alt="" style="max-width: 100%;max-height: 100%;">
+            </div>
+            <p class="store-name font-weight-bolder ">店名:NL車體包膜</p>
+            <div class="rwdmap mb-3" style="width: 100%;height: 25vh;background-color: gray;"></div>
+            <p class="font-weight-bolder">電話:04-1234-1234</p>
+            <p class="font-weight-bolder">營業時間:09:00~21:00</p>
+            <p class="font-weight-bolder">地址:臺中市豐原區文昌街60號</p>
+          </div>
+        </div>
+      </div>
+      <!-- 滿版60%置左的地圖 -->
+      <div class="gotop position-absolute d-flex  justify-content-center align-items-end"
+        style=" bottom: 0;width: 100%;height: 40px;background-color: #B02020; ">
+
+        <div class="Top  text-white d-flex flex-column align-items-center justify-content-center" style="font-size: 20px;width: 100px;
+        height: 70px;
+        background: #B02020;
+        border-radius: 100px 100px 0 0;">
+          <a class="up" style="border: 20px solid white;
+        width: 0;
+        height: 0;
+        border-color:  transparent  transparent white transparent" href="#"></a>
+          TOP
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="text-white d-flex flex-column align-items-center justify-content-center"
+      style="height: 150px; width: 100%;background-color:#34332F ;font-size: 12px;">
+      <p>Copyright©2021 NL包膜 版權所有</p>
+      <p>本網站僅作教學用，如有侵權請告知</p>
+      <p class="text-center">班級:前端介面工程師培訓班|主辦單位:勞動力發展署中彰分屬|訓練單位:上益資訊管理顧問有限公司|指導單位:數位方塊有限公司</p>
+    </footer>
   </section>
   <script src="https://kit.fontawesome.com/cda6c7a130.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -203,7 +462,26 @@
     crossorigin="anonymous"></script>
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- 登入畫面JS end-->
+  <script>
+    var myVar;
 
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+      document.getElementById("loading").style.display = "none";
+      document.getElementById("all").style.display = "block";
+    }
+
+  </script>
+  <!-- AOS Core js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- 登入畫面JS end -->
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".carSwiper", {
