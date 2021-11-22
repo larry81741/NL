@@ -76,7 +76,7 @@
     position: unset !important;
     -webkit-transform: unset !important;
             transform: unset !important;
-    margin-left: 48px;
+    margin-left: 48px !important;
   }
 }
 
@@ -86,6 +86,19 @@
     -webkit-transform: translate(-50%, 0) !important;
             transform: translate(-50%, 0) !important;
     left: 50%;
+    margin-left: 0px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    width: 60px;
+  }
+  .web-link {
+    padding-left: 16px !important;
+  }
+  .web-icon {
+    width: 20px;
   }
 }
 
@@ -102,14 +115,13 @@
 
 .dropdown-menu {
   position: absolute;
-  z-index: 10;
   display: none;
-  min-width: 160px;
+  
+  right: 0;
   padding: 0;
-  font-size: 20px;
+  
   background-color: #34332f;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  
   border-radius: 0.25rem;
 }
 
@@ -120,6 +132,7 @@
 @media (max-width: 1200px) {
   #navbarDropdown {
     display: block;
+    
   }
 }
 
@@ -138,7 +151,17 @@
     border: none !important;
   }
 }
-
+@media (max-width: 500px) {
+  .NL {
+    font-size: 40px !important;
+  }
+  .about-word {
+    font-size: 18px !important;
+  }
+  .store-info-text {
+    font-size: 20px !important;
+  }
+}
 .choose-circle {
   width: 65vh;
   height: 65vh;
@@ -169,7 +192,7 @@
 .rwdmap {
   display: none;
 }
-
+/* store */
 @media (max-width: 770px) {
   .store-title {
     display: -webkit-box;
@@ -210,5 +233,23 @@
             flex-direction: column;
     margin-top: 0 !important;
   }
+  /* FAQ */
+  .FAQ-title {
+    font-size: 24px !important;
+  }
+  .FAQ-title-line {
+    width: 50px !important;
+  }
+  .Q-text {
+    font-size: 14px !important;
+  }
+  .A-text {
+    font-size: 12px;
+  }
+  
 }
+
+
+
+
 /*# sourceMappingURL=do.css.map */
