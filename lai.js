@@ -1,3 +1,69 @@
+//block2 start
+const handcontrollers=document.querySelectorAll(".hand-controller");
+const handimgs=document.querySelectorAll(".hand-controller>img");
+const chooseleft=document.querySelector(".choose-left");
+const chooseright=document.querySelector(".choose-right");
+const texts=document.querySelectorAll(".choose-text");
+chooseleft.addEventListener("click",circlefun);
+chooseright.addEventListener("click",circlefun);
+function circlefun(){
+  texts.forEach(text=>text.classList.remove("showtext"));
+  if(this==chooseright){
+    console.log("right");
+    handcontrollers.forEach(handcontroller=> handcontroller.style.transform =`rotate(${getRotationAngle(handcontroller)+120}deg)`);
+    handimgs.forEach(handimg=> handimg.style.transform =`rotate(${getRotationAngle(handimg)-120}deg)`);
+
+    for (let index = 0; index < handcontrollers.length; index++) {
+        if(getRotationAngle( handcontrollers[index])==330){
+          texts[index].classList.add("showtext")
+        }
+    }
+  }
+  else{
+    console.log("left");
+    handcontrollers.forEach(handcontroller=> handcontroller.style.transform =`rotate(${getRotationAngle(handcontroller)-120}deg)`);
+    handimgs.forEach(handimg=> handimg.style.transform =`rotate(${getRotationAngle(handimg)+120}deg)`);
+    for (let index = 0; index < handcontrollers.length; index++) {
+      console.log(getRotationAngle(handcontrollers[index]));
+      if(getRotationAngle( handcontrollers[index])==210){
+        texts[index].classList.add("showtext");
+      }
+  }
+  }
+}
+
+
+
+
+function getRotationAngle(target) 
+{
+  const obj = window.getComputedStyle(target, null);
+  const matrix = obj.getPropertyValue('transform');
+
+  let angle = 0; 
+
+  if (matrix !== 'none') 
+  {
+    const values = matrix.split('(')[1].split(')')[0].split(',');
+    const a = values[0];
+    const b = values[1];
+    angle = Math.round(Math.atan2(b, a) * (180/Math.PI));
+  } 
+
+  return (angle < 0) ? angle +=360 : angle;
+}
+//block2 end
+
+
+
+
+
+
+
+
+
+
+//block3&4 start
 const photos = [
   //資料存取處  place:0~5  skin:1~2
   { myurl: "./img/前燈/前燈_改色膜1.jpg", place: "0", skin: "1" },
@@ -22,13 +88,6 @@ const photos = [
   { myurl: "./img/全車/全車_改色膜2.jpg", place: "6", skin: "1" },
   { myurl: "./img/全車/全車_改色膜3.jpg", place: "6", skin: "1" },
   { myurl: "./img/全車/全車_犀牛皮1.jpg", place: "6", skin: "2" },
-
-
-
-
-
-  
-
 ];
 const carswiper = document.querySelector(".carSwiper>.swiper-wrapper");
 const test = document.querySelectorAll("[name='btu']"); //選取按鈕
@@ -114,8 +173,12 @@ function showdata() {
     }
   }
 }
+//block3&4 end
+
+//block5 start
 const steps = document.querySelectorAll(".step");
 steps.forEach((step) => step.addEventListener("click", stepeffect));
 function stepeffect() {
   steps.forEach((step) => step.classList.remove("click"));
   this.classList.add("click");}
+  //block5 end
