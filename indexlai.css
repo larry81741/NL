@@ -609,6 +609,18 @@
   }
 }
 
+.containerr.block-4 > a {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .containerr.block-4 > a {
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+}
+
 .containerr.block-4 > iframe {
   margin-top: 100px;
   width: 100%;
