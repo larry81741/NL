@@ -139,6 +139,18 @@
   }
 }
 
+@media (max-width: 500px) {
+  .NL {
+    font-size: 40px !important;
+  }
+  .about-word {
+    font-size: 18px !important;
+  }
+  .store-info-text {
+    font-size: 20px !important;
+  }
+}
+/* Label-choose */
 .choose-circle {
   width: 65vh;
   height: 65vh;
