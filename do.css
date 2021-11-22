@@ -162,6 +162,7 @@
     font-size: 20px !important;
   }
 }
+/* Label-choose */
 .choose-circle {
   width: 65vh;
   height: 65vh;
@@ -187,12 +188,24 @@
   width: 180px;
   height: 180px;
   border-radius: 10px;
+  transform-origin: -180%;
+  transform: rotate(0deg);
 }
 
+.choose-left,.choose-right{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color:white;
+}
+
+/* RWD-Label-choose */
+
+/* store */
 .rwdmap {
   display: none;
 }
-/* store */
+
 @media (max-width: 770px) {
   .store-title {
     display: -webkit-box;
