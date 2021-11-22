@@ -7,6 +7,65 @@
   font-family: 微軟正黑體;
 }
 
+.hand-controller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 35%;
+  left: 100%;
+  -webkit-transform-origin: -100%;
+          transform-origin: -100%;
+}
+
+.c1 {
+  -webkit-transform: translate(-50%) rotate(145deg);
+          transform: translate(-50%) rotate(145deg);
+  top: 29%;
+  left: 95%;
+}
+
+.c1 > .company {
+  -webkit-transform: rotate(215deg);
+          transform: rotate(215deg);
+}
+
+.c2 {
+  -webkit-transform: translate(-50%) rotate(265deg);
+          transform: translate(-50%) rotate(265deg);
+}
+
+.c2 > .company {
+  -webkit-transform: rotate(95deg);
+          transform: rotate(95deg);
+}
+
+.c3 {
+  -webkit-transform: translate(-50%) rotate(385deg);
+          transform: translate(-50%) rotate(385deg);
+  left: 96%;
+}
+
+.c3 > .company {
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+
+.company {
+  -webkit-transform: rotate(220deg);
+          transform: rotate(220deg);
+}
+
 .disableleft-block * {
   display: none !important;
 }

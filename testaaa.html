@@ -1,268 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NL汽車包膜</title>
-    <!-- bootstrap CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <!-- bootstrap icon Core CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
-    <!-- Swiper Core CDN -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
-
-    <style>
-        * {
-            font-family: 微軟正黑體;
-        }
-
-        body {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-
-        .navbar {
-            width: 100%;
-            height: 10vh;
-            margin-top: 20px;
-        }
-
-        .logo {
-            width: 100px;
-            border-radius: 50%;
-
-        }
-
-        #about,
-        #Label-choose,
-        #store,
-        #FAQ {
-            height: 100vh;
-            width: 100%;
-        }
-
-        .aboutus {
-            width: 60%;
-        }
-
-        .about-img {
-            width: 50%;
-            height: 540px;
-            background-color: gray;
-
-        }
-
-        .aboutred {
-            background-color: #B02020;
-
-        }
-
-        /* 圓圈區 */
-
-        .choose-circle {
-            width: 65vh;
-            height: 65vh;
-            /* border: 50px solid #CD2525; */
-            background-image: url(img/方向盤.jpg);
-            background-size: cover;
-            border-radius: 50%;
-            /* bottom: 10%;
-            left: 50%;
-            transform: translate(-50%, 0) */
-            /* margin-top: 60px; */
-            /* position: absolute; */
-            /* background-image: url(img/NLLOGO.jpg);
-            background-size: cover; */
-            /* bottom: 15%; */
-            /* padding: 4rem; */
-            /* box-shadow:
-                0 0 0 4px rgba(0, 0, 0, 0.1),
-                inset 0 0 0 3px #EFEFEF,
-                inset 0 0 10px black,
-                0 0 10px rgba(0, 0, 0, 0.2); */
-        }
-
-        /* .clock-face {
-            border-radius: 10px;
-            opacity: 0.5;
-        } */
-
-        .choose-line {
-            width: 20%;
-            height: 3px;
-            background: white;
-            position: absolute;
-            top: 20%;
-            transform: rotate(90deg);
-            transition: all 0.05s;
-            transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-        }
-
-        .choose-circle {
-            position: relative;
-        }
-
-        .company {
-            width: 180px;
-            height: 180px;
-            border-radius: 10px;
-        }
-
-        /* FAQ */
-        .A {
-            display: none !important;
-        }
-
-        /* Swiper 測試 */
-        /* .swiper {
-            width: 50%;
-            height: 50%;
-        } */
-
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-        }
-
-        .swiper-slide-active {
-            bottom: 0;
-        }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .hand {
-            width: 3px;
-            height: 50px;
-            background-color: aqua;
-            display: none;
-        }
-
-        .hand-controller {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            position: absolute;
-            top: 35%;
-            left: 100%;
-            transform-origin: -100%;
-        }
-
-        .c1 {
-            transform: translate(-50%) rotate(145deg);
-            top: 29%;
-            left: 95%;
-        }
-
-        .c1>.company {
-            transform: rotate(215deg);
-        }
-
-        .c2 {
-            transform: translate(-50%) rotate(265deg);
-        }
-
-        .c2>.company {
-            transform: rotate(95deg);
-        }
-
-        .c3 {
-            transform: translate(-50%) rotate(385deg);
-            left: 96%;
-        }
-
-        .c3>.company {
-            transform: rotate(-25deg);
-        }
-
-        .company {
-            transform: rotate(220deg);
-        }
-    </style>
-</head>
+原block-2暫存
 
 
 
-<body>
-    <main>
-        <!-- 圓圈品牌選用 -->
-        <section id="Label-choose" class="" style="background-color: #34332F;padding-top: 150px;">
-            <div class="container d-flex flex-column  justify-content-center align-items-center">
-                <p class="text-white mt-5 mb-4 mr-auto  d-inline" style="font-size: 36px;border-top: white 3px solid;">
-                    品牌選用</p>
-                <div class="choose-circle position-relative  d-flex align-items-center justify-content-center">
-                    <div
-                        class="clock-face d-flex flex-column  align-items-center justify-content-center h-50 w-50  position-absolute ">
-                        <span class="text-white" style="font-size: 30px;">3M</span>
-                        <p class="text-white h4 m-0">我是暫定文字我是暫定文字我是暫定文字我是暫定文字我是暫定文字我是暫定文字我是暫定文字</p>
-                    </div>
-                    <div class="hand-controller c1">
-                        <div class="company d-flex align-items-center justify-content-center"
-                            style="background-color: white;opacity: 0.5;">
-                            <div class="aaa" style="width:20px;height: 20px; background-color: red;"></div>
-                        </div>
-                    </div>
-                    <div class="hand-controller c2">
-                        <div class="company d-flex align-items-center justify-content-center"
-                            style="background-color: white;opacity: 0.5;">
-                            <div class="aaa" style="width:20px;height: 20px; background-color: green;"></div>
-                        </div>
-                    </div>
-                    <div class="hand-controller c3">
-                        <div class="company d-flex align-items-center justify-content-center"
-                            style="background-color: white;opacity: 0.5;">
-                            <div class="aaa" style="width:20px;height: 20px; background-color: blue;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<p class="text-white mt-5 mb-4 me-auto  d-inline" style="font-size: 28px;border-top: white 3px solid;">
+    品牌選用</p>
+  <div class="choose-circle position-relative  d-flex align-items-center justify-content-center">
 
-    </main>
-
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
-    <script>
-        const hahas = document.querySelectorAll(".hand-controller");
-        hahas.forEach(haha => haha.addEventListener('click', test));
-        function test(){
-            console.log(hahas[0].style.transform);
-            hahas.forEach(haha => haha.style.transform=`rotate(calc(145 + ${120})deg)`);
+    <div
+      class="choose-text choose-text1 d-flex flex-column  align-items-center justify-content-center h-50 w-50  position-absolute ">
+      <div class="choose-line"></div>
+      <span class="text-white" style="font-size: 24px;">3M</span>
+      <p class="text-white h6 mb-3">為最多人選用的品牌，您的車輛在撕除彩繪後，看起來將像新的一樣。</p>
+    </div>
+    <div
+      class="choose-text choose-text2 d-flex flex-column  align-items-center justify-content-center h-50 w-50  position-absolute ">
+      <div class="choose-line"></div>
+      <span class="text-white" style="font-size: 24px;">AX</span>
+      <p class="text-white h6 mb-3">以實用性為出發點，美觀與保護為其特色，突破市場的界線，開啟了車體包膜的新世界。</p>
+    </div>
+    <div
+      class="choose-text choose-text3 d-flex flex-column  align-items-center justify-content-center h-50 w-50  position-absolute ">
+      <div class="choose-line"></div>
+      <span class="text-white" style="font-size: 24px;">ATARAPA</span>
+      <p class="text-white h6 mb-3">創新材料開發商，藉由各種新科技解決方案，為您設想，創新未來。</p>
+    </div>
 
 
-        }
-    </script>
-
-</body>
-
-</html>
+    <div class="company position-absolute d-flex align-items-center bg-white" style="top: -10%;">
+      <img src="img/品牌/3M.png" style="max-width: 100%;max-height: 100%;" alt="">
+    </div>
+    <div class="company position-absolute d-flex align-items-center"
+      style="bottom: 3%;left: 0;background-color: white;opacity: 0.5;">
+      <img src="img/品牌/AXFILMX.png" style="max-width: 100%;max-height: 100%;" alt="">
+    </div>
+    <div class="company position-absolute d-flex align-items-center"
+      style="bottom: 3%;right: 0;background-color: white;opacity: 0.5;">
+      <img src="img/品牌/ATARAPA.jpg" style="max-width: 100%;max-height: 100%; " alt="">
