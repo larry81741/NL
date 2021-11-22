@@ -18,7 +18,7 @@
 </head>
 
 <body onload="myFunction()">
-  <div id="loading">
+  <!-- <div id="loading">
     <div id="loadcontainer" class="d-flex flex-column align-items-center" style="width: 60%;">
       <img class="loadLOGO" src="./img/NLLOGO.jpg" width="300px" height="300px" alt="">
       <div class="inner_progress position-relative" style="height: 9px;
@@ -34,7 +34,7 @@
       </div>
     </div>
   </div>
-  <section id="all" style="display: none;">
+  <section id="all" style="display: none;"> -->
     <nav class="navbar navbar-expand-xl  navbar-light  p-0 position-fixed d-flex align-items-center  w-100 "
       style="z-index: 3;">
       <!-- LOGO -->
@@ -198,34 +198,44 @@
         <div class="land-block">
           <img src="./car-02.png" alt="" />
           <div class="radio_on_car">
-            <label for="btn_1" data-place="0" class="radio">1</label>
+            <label for="btn_1" data-place="0" class="radio">前燈</label>
             <input type="radio" name="btu" id="btn_1" />
           </div>
           <div class="radio_on_car">
-            <label for="btn_2" data-place="1" class="radio" class="radio">2</label>
+            <label for="btn_2" data-place="1" class="radio" class="radio">引擎蓋</label>
             <input type="radio" name="btu" id="btn_2" />
           </div>
           <div class="radio_on_car">
-            <label for="btn_3" data-place="2" class="radio">3</label>
+            <label for="btn_3" data-place="2" class="radio">後視鏡</label>
             <input type="radio" name="btu" id="btn_3" />
           </div>
           <div class="radio_on_car">
-            <label for="btn_4" data-place="3" class="radio">4</label>
+            <label for="btn_4" data-place="3" class="radio">車頂</label>
             <input type="radio" name="btu" id="btn_4" />
           </div>
           <div class="radio_on_car">
-            <label for="btn_5" data-place="4" class="radio">5</label>
+            <label for="btn_5" data-place="4" class="radio">B柱飾板</label>
             <input type="radio" name="btu" id="btn_5" />
           </div>
           <div class="radio_on_car">
-            <label for="btn_6" data-place="5" class="radio">6</label>
+            <label for="btn_6" data-place="5" class="radio">尾燈</label>
             <input type="radio" name="btu" id="btn_6" />
           </div>
           <div class="radio_on_car">
-            <label for="btn_7" data-place="all" class="radio">7</label>
+            <label for="btn_7" data-place="all" class="radio">全車</label>
             <input type="radio" name="btu" id="btn_7" />
           </div>
         </div>
+        <select class="select-not-required" id="language">
+          <option disabled selected>請選擇</option>
+          <option data-place="0">前燈</option>
+          <option data-place="1">引擎蓋</option>
+          <option data-place="2">後視鏡</option>
+          <option data-place="3">車頂</option>
+          <option data-place="4">B柱飾板</option>
+          <option data-place="5">尾燈</option>
+          <option data-place="6">全車</option>
+        </select>
       </div>
       <div class="containerr block-4">
         <div class="left-block disableleft-block">
@@ -239,10 +249,15 @@
         </div>
         <div class="testtttt">
           <div class="swiper carSwiper">
-            <div class="swiper-wrapper"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"style="margin-right: 30px;">
+                <img src="unnamed.jpg" alt="">
+              </div>
+            </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
+          <a href="">更多照片 ></a>
         </div>
 
         <iframe src="https://www.youtube.com/embed/h9hwjo_zDuc" title="YouTube video player" frameborder="0"
@@ -256,89 +271,71 @@
         <h3>服務流程</h3>
         <div class="steps d-flex w-100 pb-4 position-relative">
           <div class="progress position-absolute col-6 col-sm-7 col-lg-12"></div>
-          <div class="
-              step
-              hover
-              w-25
-              d-flex
-              flex-column
-              align-items-center
-              justify-content-center
-              position-relative
-            ">
+          <div class=" step hover w-25 d-flex flex-column align-items-center justify-content-center position-relative">
             <img src="./aaaa.jpg" alt="" />
-            <div class="
-          circle
-          active
-          d-flex
-          align-items-center
-          justify-content-center
-          rounded-circle
-              "></div>
+            <div class=" circle active d-flex align-items-center justify-content-center rounded-circle"></div>
             <span>來電詢問/私訊粉專</span>
           </div>
-          <div class="
-              step
-              hover
-              w-25
-              d-flex
-              flex-column
-              align-items-center
-              justify-content-center
-              position-relative
-            ">
+          <div class=" step hover w-25 d-flex flex-column align-items-center justify-content-center position-relative">
             <img src="./aaaa.jpg" alt="" />
-            <div class="
-                circle
-                d-flex
-                align-items-center
-                justify-content-center
-                rounded-circle
-              "></div>
+            <div class=" circle d-flex align-items-center justify-content-center rounded-circle"></div>
             <span>現場洽談選膜</span>
           </div>
-          <div class="
-              step
-              hover
-              w-25
-              d-flex
-              flex-column
-              align-items-center
-              justify-content-center
-              position-relative
-              active
-            ">
+          <div class=" step hover w-25 d-flex flex-column align-items-center justify-content-center position-relative active">
             <img src="./aaaa.jpg" alt="" />
-            <div class="
-                circle
-                active
-                d-flex
-                align-items-center
-                justify-content-center
-                rounded-circle
-              "></div>
+            <div class=" circle active d-flex align-items-center justify-content-center rounded-circle"></div>
             <span>安排包膜時間(約3-5工作天)</span>
           </div>
-          <div class="
-              step
-              hover
-              w-25
-              d-flex
-              flex-column
-              align-items-center
-              justify-content-center
-              position-relative
-            ">
+          <div class=" step hover w-25 d-flex flex-column align-items-center justify-content-center position-relative">
             <img src="./aaaa.jpg" alt="" />
-            <div class="
-                circle
-                d-flex
-                align-items-center
-                justify-content-center
-                rounded-circle
-              "></div>
+            <div class=" circle d-flex align-items-center justify-content-center rounded-circle"></div>
             <span>來電詢問/私訊粉專</span>
           </div>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class=" step hover w-100 d-flex flex-column align-items-center justify-content-center position-relative">
+                <img src="./aaaa.jpg" alt="" />
+                <div class="line-circle">
+                  <div class="line"></div>
+                  <div class=" circle active d-flex align-items-center justify-content-center rounded-circle"></div>
+                </div>
+                <span>來電詢問/私訊粉專</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class=" step hover w-100 d-flex flex-column align-items-center justify-content-center position-relative">
+                <img src="./aaaa.jpg" alt="" />
+                <div class="line-circle">
+                  <div class="line"></div>
+                  <div class=" circle active d-flex align-items-center justify-content-center rounded-circle"></div>
+                </div>
+                <span>來電詢問/私訊粉專</span>
+              </div>
+            </div>            
+            <div class="swiper-slide">
+              <div class=" step hover w-100 d-flex flex-column align-items-center justify-content-center position-relative">
+                <img src="./aaaa.jpg" alt="" />
+                <div class="line-circle">
+                  <div class="line"></div>
+                  <div class=" circle active d-flex align-items-center justify-content-center rounded-circle"></div>
+                </div>
+                <span>來電詢問/私訊粉專</span>
+              </div>
+            </div>            <div class="swiper-slide">
+              <div class=" step hover w-100 d-flex flex-column align-items-center justify-content-center position-relative">
+                <img src="./aaaa.jpg" alt="" />
+                <div class="line-circle">
+                  <div class="line"></div>
+                  <div class=" circle active d-flex align-items-center justify-content-center rounded-circle"></div>
+                </div>
+                <span>來電詢問/私訊粉專</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
     </section>
@@ -438,14 +435,8 @@
       <div class="gotop position-absolute d-flex  justify-content-center align-items-end"
         style=" bottom: 0;width: 100%;height: 40px;background-color: #B02020; ">
 
-        <div class="Top  text-white d-flex flex-column align-items-center justify-content-center" style="font-size: 20px;width: 100px;
-        height: 70px;
-        background: #B02020;
-        border-radius: 100px 100px 0 0;">
-          <a class="up" style="border: 20px solid white;
-        width: 0;
-        height: 0;
-        border-color:  transparent  transparent white transparent" href="#"></a>
+        <div class="Top  text-white d-flex flex-column align-items-center justify-content-center" style="font-size: 20px;width: 100px; height: 70px; background: #B02020; border-radius: 100px 100px 0 0;">
+          <a class="up" style="border: 20px solid white; width: 0; height: 0; border-color:  transparent  transparent white transparent" href="#"></a>
           TOP
         </div>
       </div>
@@ -476,7 +467,7 @@
   <script>
     var swiper = new Swiper(".carSwiper", {
       slidesPerView: 1,
-      spaceBetween: 30,
+      spaceBetween: 0,
       loop: true,
       autoplay: true,
       pagination: {
@@ -488,6 +479,12 @@
       },
 
     });
+    var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
   </script>
   <script src="./do.js"></script>
   <script src="./lai.js"></script>

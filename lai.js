@@ -1,14 +1,30 @@
 const photos = [
   //資料存取處  place:0~5  skin:1~2
-  { myurl: "./unnamed.jpg", place: "1", skin: "2" },
-  { myurl: "./aaaa.jpg", place: "1", skin: "1" },
-  { myurl: "./unnamed.jpg", place: "2", skin: "1" },
-  { myurl: "./unnamed.jpg", place: "2", skin: "1" },
-  { myurl: "./unnamed.jpg", place: "3", skin: "1" },
-  { myurl: "./aaaa.jpg", place: "3", skin: "2" },
-  { myurl: "./unnamed.jpg", place: "4", skin: "2" },
-  { myurl: "./unnamed.jpg", place: "4", skin: "2" },
-  { myurl: "./aaaa.jpg", place: "5", skin: "2" },
+  { myurl: "./img/引擎蓋/引擎蓋_改色膜1.jpg", place: "1", skin: "1" },
+  { myurl: "./img/引擎蓋/引擎蓋_改色膜2.jpg", place: "1", skin: "1" },
+  { myurl: "./img/引擎蓋/引擎蓋_犀牛皮1.jpg", place: "1", skin: "2" },
+  { myurl: "./img/引擎蓋/引擎蓋_犀牛皮2.jpg", place: "1", skin: "2" },
+  { myurl: "./img/全車/全車_改色膜1.jpg", place: "6", skin: "1" },
+  { myurl: "./img/全車/全車_改色膜2.jpg", place: "6", skin: "1" },
+  { myurl: "./img/全車/全車_犀牛皮1.jpg", place: "6", skin: "2" },
+  { myurl: "./img/全車/全車_犀牛皮2.jpg", place: "6", skin: "2" },
+  { myurl: "./img/尾燈/尾燈_改色膜1.jpg", place: "5", skin: "1" },
+  { myurl: "./img/尾燈/尾燈_改色膜2.jpg", place: "5", skin: "1" },
+  { myurl: "./img/尾燈/尾燈_犀牛皮1.jpg", place: "5", skin: "2" },
+  { myurl: "./img/車頂/車頂_犀牛皮1.jfif", place: "3", skin: "2" },
+  { myurl: "./img/車頂/車頂_改色膜1.jpg", place: "3", skin: "1" },
+  { myurl: "./img/前燈/前燈_改色膜1.jpg", place: "0", skin: "1" },
+  { myurl: "./img/前燈/前燈_改色膜2.jpg", place: "0", skin: "1" },
+  { myurl: "./img/前燈/前燈_犀牛皮1.jpg", place: "0", skin: "2" },
+  { myurl: "./img/後視鏡/後視鏡_犀牛皮.jfif", place: "2", skin: "2" },
+  { myurl: "./img/後視鏡/後視鏡_犀牛皮2.jfif", place: "2", skin: "2" },
+  { myurl: "./img/後視鏡/後視鏡_改色膜1.jpg", place: "2", skin: "1" },
+  { myurl: "./img/後視鏡/後視鏡_改色膜2.jpg", place: "2", skin: "1" },
+  { myurl: "./img/B柱飾板/B柱_改色膜1.jpg", place: "4", skin: "1" },
+  { myurl: "./img/B柱飾板/B柱_犀牛皮.jfif", place: "4", skin: "2" },
+
+  
+
 ];
 const carswiper = document.querySelector(".carSwiper>.swiper-wrapper");
 const test = document.querySelectorAll("[name='btu']"); //選取按鈕
@@ -22,12 +38,12 @@ test.forEach((aaa) => aaa.addEventListener("click", showdata)); //把按鈕加�
 btns.forEach((bbb) => bbb.addEventListener("click", showdata));
 
 function showdata() {
-  test.forEach((aaa) => aaa.previousElementSibling.classList.remove("show")); //重製畫面
+  test.forEach((aaa) => aaa.previousElementSibling.classList.remove("showlai")); //重製畫面
   test.forEach((aaa) => aaa.classList.remove("byebye")); //重製畫面
   showswiper.classList.add("showswiper");
   showswiper.classList.add("swiper_settimeout0");
   if (this.previousElementSibling.className == "radio") {
-    this.previousElementSibling.classList.add("show"); //新增class ->顯現
+    this.previousElementSibling.classList.add("showlai"); //新增class ->顯現
     this.classList.add("byebye"); //新增class->消失
     radiotmp = this.previousElementSibling.dataset.place; //紀錄部位
     spandata.innerHTML = this.previousElementSibling.innerHTML;
