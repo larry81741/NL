@@ -41,8 +41,8 @@
 }
 
 .hand-controller > img {
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .hand-controller > .qweqwe {
@@ -50,28 +50,86 @@
 }
 
 .c1 {
-  top: 35%;
-  left: -28%;
+  top: 35.5%;
+  left: -26%;
+}
+
+@media (max-width: 1650px) {
+  .c1 {
+    top: 37%;
+    left: -19%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .c1 {
+    top: 38%;
+    left: -16%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .c1 {
+    top: 39%;
+    left: -13%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .c1 {
+    top: 41%;
+    left: -10%;
+  }
 }
 
 .c1 > img {
+  width: 13vw;
   -webkit-transform: rotate(270deg) translateY(50%) translateX(-10%);
           transform: rotate(270deg) translateY(50%) translateX(-10%);
 }
 
 .c1 > .qweqwe {
   width: 300px;
-  height: 20px;
+  height: 2px;
 }
 
 .c2 {
   -webkit-transform: rotate(210deg);
           transform: rotate(210deg);
-  top: 39.5%;
-  left: -28%;
+  top: 37.5%;
+  left: -26%;
+}
+
+@media (max-width: 1650px) {
+  .c2 {
+    top: 38.5%;
+    left: -19%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .c2 {
+    top: 39.5%;
+    left: -16%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .c2 {
+    top: 39.5%;
+    left: -14%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .c2 {
+    top: 41.5%;
+    left: -9%;
+  }
 }
 
 .c2 > img {
+  width: 13vw;
   -webkit-transform: rotate(150deg);
           transform: rotate(150deg);
 }
@@ -84,11 +142,40 @@
 .c3 {
   -webkit-transform: rotate(330deg);
           transform: rotate(330deg);
-  top: 40%;
-  left: -32.5%;
+  top: 41%;
+  left: -26.5%;
+}
+
+@media (max-width: 1650px) {
+  .c3 {
+    top: 42%;
+    left: -20.5%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .c3 {
+    top: 42.5%;
+    left: -16.5%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .c3 {
+    top: 42.5%;
+    left: -13.5%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .c3 {
+    top: 43%;
+    left: -9.5%;
+  }
 }
 
 .c3 > img {
+  width: 13vw;
   -webkit-transform: rotate(30deg) translateX(-10%);
           transform: rotate(30deg) translateX(-10%);
 }
@@ -309,8 +396,8 @@
   }
 }
 
-.mySwiper >#laiswiperbuttonnext,
-.mySwiper > #laiswiperbuttonprev {
+.mySwiper > .swiper-button-next,
+.mySwiper > .swiper-button-prev {
   top: 40%;
 }
 
