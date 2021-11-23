@@ -8,7 +8,9 @@
 }
 
 .skinchoose-btns {
-  width: 40%;
+  position: relative;
+  top: 30%;
+  width: 120%;
   -webkit-transform: translateY(200%);
           transform: translateY(200%);
 }
@@ -47,8 +49,12 @@
 }
 
 .hand-controller > img {
+  max-width: 250px;
+  max-height: 250px;
+  background-color: white;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+  
 }
 
 .hand-controller > .qweqwe {
