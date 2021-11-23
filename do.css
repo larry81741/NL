@@ -198,9 +198,8 @@
 /* rwd Label */
 .doswiper-container {
   width: 90%;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
-  margin-bottom: 50px;
   display: none;
   align-items: center;
   position: relative;
@@ -215,20 +214,20 @@
 
 }
 
-.swiper-slide {
+#domySwiper .swiper-slide {
   transition: 0.8s;
   z-index: -1;
   font-size: 0;
 }
 
-.swiper-slide img {
+#domySwiper .swiper-slide img {
   max-width: 100%;
   display: block;
   margin: auto;
 }
 
 /* 選取到的中間品牌 */
-.swiper-slide-next {
+#domySwiper .swiper-slide-next  {
   position: relative;
   transform: scale(1.4);
   z-index: 5;
@@ -236,25 +235,25 @@
 
 }
 
-.swiper-slide-active {
+#domySwiper .swiper-slide-active {
   position: relative;
   transform: translateX(20px);
   z-index: -1;
   font-size: 0;
 }
 
-.swiper-slide-duplicate-prev {
+#domySwiper .swiper-slide-duplicate-prev {
   position: relative;
   transform: translateX(-20px);
   z-index: -2;
   font-size: 0;
 }
 
-.swiper-slide-duplicate-prev>img {
+#domySwiper .swiper-slide-duplicate-prev>img {
   opacity: 0.7;
 }
 
-.swiper-slide-active>img {
+#domySwiper .swiper-slide-active>img {
   opacity: 0.7;
 }
 
@@ -288,7 +287,7 @@
   flex-direction: column;
   justify-content: center;
   
-  bottom: -60%;
+  bottom: -75%;
   left: -50%;
   width:200%;
 }
