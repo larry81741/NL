@@ -138,7 +138,7 @@ function showdata() {
     carswiper.innerHTML = "";
     for (let index = 0; index < photos.length; index++) {
       if (photos[index].place == radiotmp && photos[index].skin == btntmp) {
-        carswiper.innerHTML += `<div class="swiper-slide"style="margin-right: 30px;"><img src="${photos[index].myurl}" alt=""></div>`;
+        carswiper.innerHTML += `<div class="swiper-slide"><img src="${photos[index].myurl}" alt=""></div>`;
         //1 1
       }
     }
@@ -147,7 +147,7 @@ function showdata() {
     carswiper.innerHTML = "";
     for (let index = 0; index < photos.length; index++) {
       if (photos[index].place == selecttmp && photos[index].skin == btntmp) {
-        carswiper.innerHTML += `<div class="swiper-slide"style="margin-right: 30px;"><img src="${photos[index].myurl}" alt=""></div>`;
+        carswiper.innerHTML += `<div class="swiper-slide"><img src="${photos[index].myurl}" alt=""></div>`;
         //1 1
       }
     }
@@ -156,7 +156,7 @@ function showdata() {
     carswiper.innerHTML = "";
     for (let index = 0; index < photos.length; index++) {
       if (photos[index].place == radiotmp) {
-        carswiper.innerHTML += `<div class="swiper-slide"style="margin-right: 30px;"><img src="${photos[index].myurl}" alt=""></div>`;
+        carswiper.innerHTML += `<div class="swiper-slide"><img src="${photos[index].myurl}" alt=""></div>`;
         //1 0
         // console.log(photos[index].place, photos[index].skin);
       }
@@ -166,7 +166,7 @@ function showdata() {
     carswiper.innerHTML = "";
     for (let index = 0; index < photos.length; index++) {
       if (photos[index].place == selecttmp) {
-        carswiper.innerHTML += `<div class="swiper-slide"style="margin-right: 30px;"><img src="${photos[index].myurl}" alt=""></div>`;
+        carswiper.innerHTML += `<div class="swiper-slide"><img src="${photos[index].myurl}" alt=""></div>`;
         //1 0
         // console.log(photos[index].place, photos[index].skin);
       }
