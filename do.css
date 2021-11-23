@@ -88,6 +88,17 @@
     left: 50%;
   }
 }
+@media (max-width: 500px) {
+  .logo {
+    width: 60px;
+  }
+  .web-link {
+    padding-left: 16px !important;
+  }
+  .web-icon {
+    width: 20px;
+  }
+}
 
 .links > img:hover {
   -webkit-transform: rotate(360deg);
@@ -102,14 +113,13 @@
 
 .dropdown-menu {
   position: absolute;
-  z-index: 10;
   display: none;
-  min-width: 160px;
+  
+  right: 0;
   padding: 0;
-  font-size: 20px;
+  
   background-color: #34332f;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  
   border-radius: 0.25rem;
 }
 
@@ -138,7 +148,18 @@
     border: none !important;
   }
 }
-
+@media (max-width: 500px) {
+  .NL {
+    font-size: 40px !important;
+  }
+  .about-word {
+    font-size: 18px !important;
+  }
+  .store-info-text {
+    font-size: 20px !important;
+  }
+}
+/* Label-choose */
 .choose-circle {
   width: 65vh;
   height: 65vh;
@@ -174,6 +195,112 @@
 .skinchoose-btns {
   width: 100%;
 }
+/* rwd Label */
+.doswiper-container {
+  width: 90%;
+  height: 90vh;
+  overflow: hidden;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+}
+
+#domySwiper {
+  width: 100%;
+  overflow: visible;
+  position: relative;
+
+}
+
+.swiper-slide {
+  transition: 0.8s;
+  z-index: -1;
+  font-size: 0;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+/* 選取到的中間品牌 */
+.swiper-slide-next {
+  position: relative;
+  transform: scale(1.4);
+  z-index: 5;
+  font-size: 20px;
+
+}
+
+.swiper-slide-active {
+  position: relative;
+  transform: translateX(20px);
+  z-index: -1;
+  font-size: 0;
+}
+
+.swiper-slide-duplicate-prev {
+  position: relative;
+  transform: translateX(-20px);
+  z-index: -2;
+  font-size: 0;
+}
+
+.swiper-slide-duplicate-prev>img {
+  opacity: 0.7;
+}
+
+.swiper-slide-active>img {
+  opacity: 0.7;
+}
+
+#dobuttonleft,
+#dobuttonright {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#dobuttonleft {
+  left: 27%;
+  transform: translateY(100%);
+}
+
+#dobuttonright {
+  right: 27%;
+  transform: translateY(100%);
+}
+
+#dobuttonleft::after,
+#dobuttonright::after {
+  font-size: 12px;
+  color: red;
+}
+
+.word {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  top: 110%;
+  left: -50%;
+  width: 200%;
+}
+.word>p{
+  text-align:center;
+}
+
+.word>span {
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+}
+/* store */
 .rwdmap {
   display: none;
 }
