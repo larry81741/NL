@@ -309,8 +309,8 @@
   }
 }
 
-.mySwiper > .swiper-button-next,
-.mySwiper > .swiper-button-prev {
+.mySwiper >#laiswiperbuttonnext,
+.mySwiper > #laiswiperbuttonprev {
   top: 40%;
 }
 

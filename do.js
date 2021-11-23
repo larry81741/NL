@@ -10,19 +10,6 @@ function showPage() {
 }
 
 
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
-var swiper = new Swiper(".domySwiper", {
-
-  navigation: {
-    nextEl: "#dobuttonright",
-    prevEl: "#dobuttonleft",
-  },
-  loop: true,
-  slidesPerView: 3,
-  speed: 300,
 
 
 
-});
