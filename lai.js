@@ -6,7 +6,6 @@ const chooseright=document.querySelector(".choose-right");
 const texts=document.querySelectorAll(".choose-text");
 chooseleft.addEventListener("click",circlefun);
 chooseright.addEventListener("click",circlefun);
-circlefun();
 function circlefun(){
   texts.forEach(text=>text.classList.remove("showtext"));
   if(this==chooseright){
