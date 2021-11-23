@@ -7,14 +7,6 @@
   font-family: 微軟正黑體;
 }
 
-.skinchoose-btns {
-  position: relative;
-  top: 30%;
-  width: 120%;
-  -webkit-transform: translateY(200%);
-          transform: translateY(200%);
-}
-
 .choose-text {
   opacity: 0;
   -webkit-transition: all 0.3s;
@@ -49,12 +41,8 @@
 }
 
 .hand-controller > img {
-  max-width: 250px;
-  max-height: 250px;
-  background-color: white;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  
 }
 
 .hand-controller > .qweqwe {
@@ -80,7 +68,7 @@
   -webkit-transform: rotate(210deg);
           transform: rotate(210deg);
   top: 39.5%;
-  left: -32%;
+  left: -28%;
 }
 
 .c2 > img {
@@ -96,7 +84,7 @@
 .c3 {
   -webkit-transform: rotate(330deg);
           transform: rotate(330deg);
-  top: 44.5%;
+  top: 40%;
   left: -32.5%;
 }
 

@@ -4,10 +4,6 @@
     box-sizing: border-box;
     font-family: 微軟正黑體;
 }
-.skinchoose-btns{
-    width: 40%;
-    transform: translateY(200%);
-}
 .choose-text{
     opacity: 0;
     transition: all 0.3s;
@@ -47,7 +43,7 @@
 .c2 {
     transform: rotate(210deg);
     top: 39.5%;
-    left: -32%;
+    left: -28%;
     &>img{
         transform: rotate(150deg)
     }
@@ -58,7 +54,7 @@
 }
 .c3 {
     transform: rotate(330deg);
-    top: 44.5%;
+    top: 40%;
     left: -32.5%;
     &>img{
         transform: rotate(30deg) translateX(-10%)
@@ -68,27 +64,6 @@
         height: 20px;
     }
 }
-
-// .c2 {
-//     transform: translate(-50%) rotate(265deg);
-// }
-
-// .c2 > .company {
-//     transform: rotate(95deg);
-// }
-
-// .c3 {
-//     transform: translate(-50%) rotate(385deg);
-//     // left: 96%;
-// }
-
-// .c3 > .company {
-//     transform: rotate(-25deg);
-// }
-
-// .company {
-//     transform: rotate(220deg);
-// }
 
 //circle end
 //about effect start
