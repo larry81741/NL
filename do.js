@@ -5,7 +5,7 @@ function myFunction() {
 }
 
 function showPage() {
-  // document.getElementById("loading").style.display = "none";
+  document.getElementById("loading").style.display = "none";
   document.getElementById("all").style.display = "block";
 }
 
